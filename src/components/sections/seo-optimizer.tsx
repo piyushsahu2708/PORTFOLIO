@@ -9,8 +9,8 @@ import {Label} from '@/components/ui/label';
 import {Textarea} from '@/components/ui/textarea';
 import {portfolioData} from '@/lib/portfolio-data';
 import {Lightbulb, Loader2, Search} from 'lucide-react';
-import {useEffect, useRef} from 'react';
-import {useFormState, useFormStatus} from 'react-dom';
+import {useEffect, useRef, useActionState} from 'react';
+import {useFormStatus} from 'react-dom';
 import {useToast} from '@/hooks/use-toast';
 import {Section, SectionHeading, SectionSubheading} from './section';
 
@@ -38,7 +38,7 @@ function SubmitButton() {
 }
 
 const SeoOptimizer = () => {
-  const [state, formAction] = useFormState(getSeoKeywords, initialState);
+  const [state, formAction] = useActionState(getSeoKeywords, initialState);
   const {toast} = useToast();
   const formRef = useRef<HTMLFormElement>(null);
 
