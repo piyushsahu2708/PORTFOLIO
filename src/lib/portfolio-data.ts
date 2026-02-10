@@ -47,7 +47,7 @@ export const portfolioData: PortfolioData = {
   about:
     "B.Tech in CSE with a 6.36 CGPA. My core interests lie in Full Stack Development, Backend Engineering, Security, and Cloud technologies. My career objective is to build scalable, secure, and impactful real-world systems.",
   contact: {
-    email: "piyush.sahu@example.com",
+    email: "piyushsahu631@gmail.com",
     phone: "+91 7000398023",
     social: {
       linkedin: "https://www.linkedin.com/in/piyush-sahu",
