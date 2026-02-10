@@ -144,5 +144,6 @@ export const portfolioData: PortfolioData = {
     "Commonwealth Bank – Software Engineering (Forage)",
     "Mastercard – Cybersecurity (Forage)",
     "AWS APAC – Solutions Architecture",
+    "Completed an advanced software engineering job simulation by Walmart Global Tech via Forage."
   ]
 };
