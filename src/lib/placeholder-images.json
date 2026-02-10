@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "A professional headshot for the portfolio.",
+      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzA3MDUyNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "skillmirror-project",
+      "description": "Placeholder image for the SkillMirror project.",
+      "imageUrl": "https://images.unsplash.com/photo-1765445665883-085301570c87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzcwNzA0Nzc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "practorvision-project",
+      "description": "Placeholder image for the PractorVision project.",
+      "imageUrl": "https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWRpY2FsJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NzA2ODY5MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "medical technology"
+    },
+    {
+      "id": "meditract-project",
+      "description": "Placeholder image for the MediTract Pro project.",
+      "imageUrl": "https://images.unsplash.com/photo-1585282263872-36fa5ae76e60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGVhbHRoY2FyZSUyMGRhdGF8ZW58MHx8fHwxNzcwNzIyOTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "healthcare data"
+    }
+  ]
 }
