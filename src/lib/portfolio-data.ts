@@ -121,7 +121,7 @@ export const portfolioData: PortfolioData = {
       ],
       techStack: ["Java", "JSP", "Servlets", "JDBC", "Python", "OpenCV", "MediaPipe"],
       githubUrl: "https://github.com/piyushsahu2708/practorvision",
-      liveUrl: "#",
+      liveUrl: "https://practor-vision.vercel.app/",
       image: PlaceHolderImages.find(img => img.id === 'practorvision-project'),
     },
     {
