@@ -23,7 +23,7 @@ const initialState = {
 function SubmitButton() {
   const {pending} = useFormStatus();
   return (
-    <Button type="submit" disabled={pending}>
+    <Button type="submit" disabled={pending} suppressHydrationWarning>
       {pending ? (
         <>
           <Loader2 className="mr-2 size-4 animate-spin" /> Optimizing...
@@ -86,6 +86,7 @@ const SeoOptimizer = () => {
                   name="userSkills"
                   defaultValue={allSkills}
                   aria-describedby="userSkills-error"
+                  suppressHydrationWarning
                 />
                 {state.fieldErrors?.userSkills && (
                   <p id="userSkills-error" className="text-sm text-destructive">
@@ -102,6 +103,7 @@ const SeoOptimizer = () => {
                   rows={8}
                   className="font-code text-xs"
                   aria-describedby="portfolioContent-error"
+                  suppressHydrationWarning
                 />
                 {state.fieldErrors?.portfolioContent && (
                   <p
@@ -121,6 +123,7 @@ const SeoOptimizer = () => {
                   name="jobDescription"
                   placeholder="Paste a job description here for more targeted keywords..."
                   rows={5}
+                  suppressHydrationWarning
                 />
               </div>
               <SubmitButton />
