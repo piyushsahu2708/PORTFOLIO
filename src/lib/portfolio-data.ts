@@ -44,7 +44,7 @@ export const portfolioData: PortfolioData = {
   name: "Piyush Sahu",
   roles: ["Software Engineer Intern", "Full Stack Developer"],
   summary:
-    "A professional, recruiter-focused portfolio that goes beyond a resume and clearly showcases technical skills, real-world project experience, system & architecture thinking, and a problem-solving mindset.",
+    "Full Stack Developer skilled in MERN stack, REST APIs, and authentication systems. Experienced in building real-world projects with clean architecture, secure data handling, and user-focused design.",
   about:
     "B.Tech in CSE with a 6.36 CGPA. My core interests lie in Full Stack Development, Backend Engineering, Security, and Cloud technologies. My career objective is to build scalable, secure, and impactful real-world systems.",
   contact: {
