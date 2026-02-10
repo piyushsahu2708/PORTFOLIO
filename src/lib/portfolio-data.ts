@@ -55,7 +55,7 @@ export const portfolioData: PortfolioData = {
       github: "https://github.com/piyushsahu2708",
     },
   },
-  resumeUrl: "/piyush_sahu_resume.pdf",
+  resumeUrl: "https://raw.githubusercontent.com/piyushsahu2708/resume/main/PIYUSH%20ENGINEER%20CSE%20(1).pdf",
   profilePicture: PlaceHolderImages.find(img => img.id === 'profile-picture'),
   experiences: [
     {
