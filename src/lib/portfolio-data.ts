@@ -136,7 +136,7 @@ export const portfolioData: PortfolioData = {
       ],
       techStack: ["MERN Stack", "Java", "REST APIs"],
       githubUrl: "https://github.com/piyushsahu2708/meditract-pro",
-      liveUrl: "#",
+      liveUrl: "https://medi-tract-pro.vercel.app/",
       image: PlaceHolderImages.find(img => img.id === 'meditract-project'),
     },
   ],
