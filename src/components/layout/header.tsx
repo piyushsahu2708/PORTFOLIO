@@ -10,6 +10,7 @@ const navLinks = [
   {href: '#experience', label: 'Experience'},
   {href: '#skills', label: 'Skills'},
   {href: '#projects', label: 'Projects'},
+  {href: '#achievements', label: 'Achievements'},
   {href: '#contact', label: 'Contact'},
 ];
 
@@ -55,7 +56,7 @@ const Header = () => {
     >
       <div className="container flex h-16 items-center justify-between">
         <a href="#home" className="text-lg font-bold text-primary">
-          Portfolio Pro
+          Piyush Sahu
         </a>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map(({href, label}) => (

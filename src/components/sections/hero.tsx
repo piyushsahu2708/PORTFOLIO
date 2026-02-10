@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { portfolioData } from '@/lib/portfolio-data';
-import { Github, Linkedin, ArrowDown } from 'lucide-react';
+import { Github, Linkedin, ArrowDown, Download, PlayCircle } from 'lucide-react';
 import Image from 'next/image';
 
 const Hero = () => {
-  const { name, roles, summary, profilePicture, contact } = portfolioData;
+  const { name, roles, summary, profilePicture, contact, resumeUrl } = portfolioData;
 
   return (
     <section id="home" className="relative min-h-[80vh] w-full">
@@ -32,15 +32,25 @@ const Hero = () => {
         <p className="mt-4 max-w-2xl text-base text-muted-foreground md:text-lg">
           {summary}
         </p>
-        <div className="mt-8 flex gap-4">
-          <Button asChild>
-            <a href={contact.social.linkedin} target="_blank" rel="noopener noreferrer">
-              <Linkedin className="mr-2" /> LinkedIn
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Button asChild size="lg">
+            <a href={resumeUrl} download>
+              <Download className="mr-2" /> Download Resume
+            </a>
+          </Button>
+           <Button variant="secondary" asChild>
+            <a href="#projects">
+              <PlayCircle className="mr-2" /> Live Projects
             </a>
           </Button>
           <Button variant="secondary" asChild>
             <a href={contact.social.github} target="_blank" rel="noopener noreferrer">
               <Github className="mr-2" /> GitHub
+            </a>
+          </Button>
+          <Button variant="secondary" asChild>
+            <a href={contact.social.linkedin} target="_blank" rel="noopener noreferrer">
+              <Linkedin className="mr-2" /> LinkedIn
             </a>
           </Button>
         </div>

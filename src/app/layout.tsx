@@ -3,8 +3,8 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Portfolio Pro',
-  description: 'A professional portfolio to showcase skills and projects.',
+  title: 'Piyush Sahu – Software Engineer Portfolio',
+  description: 'A professional, recruiter-focused portfolio showcasing technical skills, real-world project experience, and problem-solving mindset.',
 };
 
 export default function RootLayout({

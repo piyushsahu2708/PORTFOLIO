@@ -1,3 +1,4 @@
+import Achievements from '@/components/sections/achievements';
 import Contact from '@/components/sections/contact';
 import Experience from '@/components/sections/experience';
 import Footer from '@/components/layout/footer';
@@ -16,6 +17,7 @@ export default function Home() {
         <Experience />
         <Skills />
         <Projects />
+        <Achievements />
         <SeoOptimizer />
         <Contact />
       </main>

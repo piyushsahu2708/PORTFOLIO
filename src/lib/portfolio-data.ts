@@ -36,101 +36,112 @@ type PortfolioData = {
     liveUrl: string;
     image: ImagePlaceholder | undefined;
   }[];
+  achievements: string[];
 };
 
 export const portfolioData: PortfolioData = {
-  name: "Jane Doe",
-  roles: ["Full Stack Developer", "Cloud Solutions Architect", "AI Enthusiast"],
+  name: "Piyush Sahu",
+  roles: ["Software Engineer Intern", "Full Stack Developer"],
   summary:
-    "Innovative Full Stack Developer with a passion for building scalable cloud solutions and leveraging AI to solve real-world problems. Proven ability to deliver high-quality software from concept to deployment.",
+    "A professional, recruiter-focused portfolio that goes beyond a resume and clearly showcases technical skills, real-world project experience, system & architecture thinking, and a problem-solving mindset.",
   about:
-    "I am a results-oriented developer with a strong foundation in computer science and a knack for creating elegant, efficient, and user-friendly applications. My journey in tech began with a fascination for how software can transform ideas into reality, which led me to explore everything from frontend design to backend architecture and cloud infrastructure. I thrive in collaborative environments and am always eager to learn new technologies and take on challenging projects.",
+    "B.Tech in CSE with a 6.36 CGPA. My core interests lie in Full Stack Development, Backend Engineering, Security, and Cloud technologies. My career objective is to build scalable, secure, and impactful real-world systems.",
   contact: {
-    email: "jane.doe@email.com",
-    phone: "+1 (555) 123-4567",
+    email: "piyush.sahu@example.com",
+    phone: "+91 12345 67890",
     social: {
-      linkedin: "https://www.linkedin.com/in/janedoe",
-      github: "https://github.com/janedoe",
+      linkedin: "https://www.linkedin.com/in/piyush-sahu",
+      github: "https://github.com/piyush-sahu",
     },
   },
-  resumeUrl: "/jane-doe-resume.pdf",
+  resumeUrl: "/piyush_sahu_resume.pdf",
   profilePicture: PlaceHolderImages.find(img => img.id === 'profile-picture'),
   experiences: [
     {
-      role: "Solutions Architecture Intern",
-      company: "Amazon Web Services (AWS)",
-      period: "May 2023 - Aug 2023",
+      role: "SDE Intern",
+      company: "ITJOBXS",
+      period: "Oct 2024 - Dec 2024",
       description:
-        "Contributed to the design and implementation of cloud-native solutions for enterprise clients, focusing on scalability, security, and cost-optimization.",
+        "Contributed to building a secure and responsive recruitment platform, focusing on user-facing features and anti-fraud measures.",
       highlights: [
-        "Developed a serverless data processing pipeline using AWS Lambda, S3, and DynamoDB, reducing processing time by 40%.",
-        "Authored technical documentation and best practice guides for internal teams on using new AWS services.",
-        "Presented a proof-of-concept for a multi-region disaster recovery strategy to senior architects.",
+        "Developed responsive UI components.",
+        "Implemented authentication and verification systems.",
+        "Created systems for fake bot and post detection.",
+        "Integrated Google reCAPTCHA for enhanced security."
       ],
-      techStack: ["AWS", "Python", "Terraform", "DynamoDB", "Lambda", "S3"],
+      techStack: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
     },
     {
-      role: "Software Development Intern",
-      company: "ITJOBXS",
-      period: "Jun 2022 - Aug 2022",
+      role: "Solutions Architecture Virtual Experience",
+      company: "AWS APAC (Forage)",
+      period: "Virtual Experience",
       description:
-        "Worked within an agile team to develop and maintain a web-based recruitment platform, enhancing features for both job seekers and recruiters.",
+        "Completed a virtual job simulation focused on core AWS cloud architecture principles.",
       highlights: [
-        "Implemented a secure authentication flow using OAuth 2.0 and integrated Google reCAPTCHA to prevent bot registrations.",
-        "Redesigned and developed a responsive user dashboard with React, improving user engagement by 15%.",
-        "Wrote comprehensive unit and integration tests, increasing code coverage to over 90%.",
+        "Designed scalable cloud architecture for a sample application.",
+        "Applied security best practices for cloud infrastructure.",
+        "Developed cost optimization strategies for AWS services.",
+        "Planned for high availability and disaster recovery."
       ],
-      techStack: ["React", "Node.js", "Express", "PostgreSQL", "Jest", "Google reCAPTCHA"],
+      techStack: ["AWS"],
     },
   ],
   skills: {
-    "Languages": ["JavaScript", "TypeScript", "Python", "Java", "SQL"],
-    "Frameworks & Libraries": ["React", "Next.js", "Node.js", "Express.js", "Tailwind CSS", "Spring Boot"],
-    "Databases": ["PostgreSQL", "MongoDB", "DynamoDB", "Redis"],
-    "Tools & Platforms": ["AWS", "Docker", "Kubernetes", "Git", "Terraform", "Jenkins", "Figma"],
+    "Programming Languages": ["Java", "JavaScript", "Python"],
+    "Frameworks & Libraries": ["React.js", "Node.js", "Express.js", "HTML, CSS"],
+    "Databases": ["MySQL", "MongoDB", "JDBC"],
+    "Tools": ["Git & GitHub", "Postman", "Netlify / Vercel"],
   },
   projects: [
     {
-      title: "SkillMirror",
+      title: "SkillMirror – Skill Verification Platform",
       description:
-        "An AI-powered platform that helps users identify and bridge skill gaps for their desired career paths by analyzing their current abilities against job market data.",
+        "An online platform designed to validate skills listed on resumes, tackling the issue of unverifiable claims.",
       features: [
-        "AI-driven skill analysis and recommendations.",
-        "Personalized learning path generation.",
-        "Interactive data visualizations of career progression.",
+        "Secure JWT-based Authentication",
+        "Role-Based Access Control (RBAC)",
+        "Automated Skill Assessment System",
+        "User Credibility Scoring",
       ],
-      techStack: ["Next.js", "Python", "FastAPI", "PostgreSQL", "GenAI", "D3.js"],
-      githubUrl: "https://github.com/janedoe/skillmirror",
+      techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+      githubUrl: "https://github.com/piyush-sahu/skillmirror",
       liveUrl: "#",
       image: PlaceHolderImages.find(img => img.id === 'skillmirror-project'),
     },
     {
-      title: "PractorVision",
+      title: "PractorVision – Smart Interview Proctoring System",
       description:
-        "A computer vision tool for medical practitioners to analyze X-ray images for preliminary fracture detection, improving diagnostic speed and accuracy.",
+        "An AI-driven system to detect and prevent cheating during remote interviews.",
       features: [
-        "High-accuracy fracture detection model.",
-        "Secure image upload and processing.",
-        "Collaborative tools for second opinions.",
+        "Face absence and multiple face detection",
+        "Head movement and posture tracking",
+        "Tab switch and window blur detection",
+        "Violation logging with timestamps for review",
       ],
-      techStack: ["Python", "TensorFlow", "OpenCV", "Flask", "React", "AWS S3"],
-      githubUrl: "https://github.com/janedoe/practorvision",
+      techStack: ["Java", "JSP", "Servlets", "JDBC", "Python", "OpenCV", "MediaPipe"],
+      githubUrl: "https://github.com/piyush-sahu/practorvision",
       liveUrl: "#",
       image: PlaceHolderImages.find(img => img.id === 'practorvision-project'),
     },
     {
-      title: "MediTract Pro",
+      title: "MediTract Pro – Hospital Management System",
       description:
-        "A blockchain-based system for securely tracking and managing the pharmaceutical supply chain, ensuring authenticity and reducing counterfeiting.",
+        "A comprehensive system to digitize and streamline manual hospital workflows.",
       features: [
-        "Immutable ledger for drug-related transactions.",
-        "Real-time tracking from manufacturer to pharmacy.",
-        "QR code-based verification for consumers.",
+        "Centralized Patient Records Management",
+        "Efficient Appointment Scheduling System",
+        "Role-Based Access for Doctors, Staff, and Admins",
+        "Secure REST APIs for data exchange",
       ],
-      techStack: ["Solidity", "Hardhat", "Next.js", "IPFS", "Node.js"],
-      githubUrl: "https://github.com/janedoe/meditract-pro",
+      techStack: ["MERN Stack", "Java", "REST APIs"],
+      githubUrl: "https://github.com/piyush-sahu/meditract-pro",
       liveUrl: "#",
       image: PlaceHolderImages.find(img => img.id === 'meditract-project'),
     },
   ],
+  achievements: [
+    "Commonwealth Bank – Software Engineering (Forage)",
+    "Mastercard – Cybersecurity (Forage)",
+    "AWS APAC – Solutions Architecture",
+  ]
 };
