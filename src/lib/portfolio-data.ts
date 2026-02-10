@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -48,7 +49,7 @@ export const portfolioData: PortfolioData = {
     "B.Tech in CSE with a 6.36 CGPA. My core interests lie in Full Stack Development, Backend Engineering, Security, and Cloud technologies. My career objective is to build scalable, secure, and impactful real-world systems.",
   contact: {
     email: "piyushsahu631@gmail.com",
-    phone: "+91 7000398023",
+    phone: "7000398023",
     social: {
       linkedin: "https://www.linkedin.com/in/piyush-sahu-052666249/",
       github: "https://github.com/piyushsahu2708",
@@ -105,7 +106,7 @@ export const portfolioData: PortfolioData = {
       ],
       techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
       githubUrl: "https://github.com/piyushsahu2708/skillmirror",
-      liveUrl: "#",
+      liveUrl: "https://skill-mirror-self.vercel.app/",
       image: PlaceHolderImages.find(img => img.id === 'skillmirror-project'),
     },
     {
