@@ -3,7 +3,7 @@
     {
       "id": "profile-picture",
       "description": "A professional headshot for the portfolio.",
-      "imageUrl": "https://images.unsplash.com/photo-1627087820883-7a102b79179a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGluZGlhbiUyMG1hbGUlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzE5OTI0MzYyfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://raw.githubusercontent.com/piyushsahu2708/profilepic/main/profile.jpeg",
       "imageHint": "man portrait"
     },
     {
