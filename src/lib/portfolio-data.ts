@@ -50,7 +50,7 @@ export const portfolioData: PortfolioData = {
     email: "piyushsahu631@gmail.com",
     phone: "+91 7000398023",
     social: {
-      linkedin: "https://www.linkedin.com/in/piyush-sahu",
+      linkedin: "https://www.linkedin.com/in/piyush-sahu-052666249/",
       github: "https://github.com/piyushsahu2708",
     },
   },
