@@ -18,7 +18,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('#home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,11 +48,10 @@ const Header = () => {
 
     if (currentTheme === 'dark') {
       document.documentElement.classList.add('dark');
-      setTheme('dark');
     } else {
       document.documentElement.classList.remove('dark');
-      setTheme('light');
     }
+    setTheme(currentTheme);
   }, []);
 
   const toggleTheme = () => {
@@ -92,11 +91,11 @@ const Header = () => {
             onClick={toggleTheme}
             className="shrink-0"
           >
-            {theme === 'dark' ? (
+            {theme && (theme === 'dark' ? (
               <Sun className="size-5" />
             ) : (
               <Moon className="size-5" />
-            )}
+            ))}
             <span className="sr-only">Toggle theme</span>
           </Button>
         </div>
