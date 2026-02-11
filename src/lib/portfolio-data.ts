@@ -95,6 +95,21 @@ export const portfolioData: PortfolioData = {
   },
   projects: [
     {
+      title: "Pink Flayer – Animated Brand Experience",
+      description:
+        "A visually immersive scroll-based landing page designed to showcase modern UI motion design using GSAP and advanced scroll interactions.",
+      features: [
+        "Smooth GSAP-powered scroll animations",
+        "Pinned sections with dynamic transitions",
+        "Layered motion effects & element scaling",
+        "Creative typography and brand storytelling",
+      ],
+      techStack: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger"],
+      githubUrl: "https://github.com/piyushsahu2708/pinkflayer-project",
+      liveUrl: "https://piyushsahu2708.github.io/pinkflayer-project/",
+      image: PlaceHolderImages.find(img => img.id === 'pinkflayer-project'),
+    },
+    {
       title: "SkillMirror – Skill Verification Platform",
       description:
         "An online platform designed to validate skills listed on resumes, tackling the issue of unverifiable claims.",
