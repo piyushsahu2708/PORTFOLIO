@@ -12,10 +12,10 @@ const Skills = () => {
   return (
     <Section id="skills">
       <div className="text-center">
-        <SectionHeading className="text-[#1F2937]">
+        <SectionHeading>
           Technical Skills
         </SectionHeading>
-        <SectionSubheading className="text-[#4B5563]">
+        <SectionSubheading>
           My toolbox of languages, frameworks, and technologies.
         </SectionSubheading>
       </div>
@@ -26,15 +26,15 @@ const Skills = () => {
             className="transition-all hover:shadow-lg hover:-translate-y-1"
           >
             <CardHeader>
-              <CardTitle className="text-[#111827]">{category}</CardTitle>
+              <CardTitle>{category}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
                   <Badge
                     key={index}
-                    variant="outline"
-                    className="border-[#CBD5E1] bg-[#F1F5F9] text-base text-[#1F2937]"
+                    variant="secondary"
+                    className="text-base font-medium"
                   >
                     {skill}
                   </Badge>
