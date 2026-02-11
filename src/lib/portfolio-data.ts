@@ -110,6 +110,21 @@ export const portfolioData: PortfolioData = {
       image: PlaceHolderImages.find(img => img.id === 'pinkflayer-project'),
     },
     {
+      title: "Tala – Fruit Snack Landing Page",
+      description:
+        "A modern animated landing page for a fruit snack brand, focused on premium branding, smooth scroll animations, and interactive product storytelling.",
+      features: [
+        "Scroll-triggered animation sequences",
+        "Section pinning with dynamic transitions",
+        "Animated product visuals & gradients",
+        "Clean, premium UI with brand-focused design",
+      ],
+      techStack: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger"],
+      githubUrl: "https://github.com/piyushsahu2708/tala-fruit-landing",
+      liveUrl: "https://piyushsahu2708.github.io/tala-fruit-landing/",
+      image: PlaceHolderImages.find(img => img.id === 'tala-project'),
+    },
+    {
       title: "SkillMirror – Skill Verification Platform",
       description:
         "An online platform designed to validate skills listed on resumes, tackling the issue of unverifiable claims.",
