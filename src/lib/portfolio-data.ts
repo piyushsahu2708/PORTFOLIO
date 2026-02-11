@@ -18,7 +18,7 @@ type PortfolioData = {
   resumeUrl: string;
   profilePicture: ImagePlaceholder | undefined;
   experiences: {
-    role: string;
+    role:string;
     company: string;
     period: string;
     description: string;
@@ -155,7 +155,7 @@ export const portfolioData: PortfolioData = {
       image: PlaceHolderImages.find(img => img.id === 'practorvision-project'),
     },
     {
-      title: "Tala – Fruit Snack Landing Page",
+      title: "Tala – Fruit Snack Brand Landing Page",
       description:
         "A modern animated landing page for a fruit snack brand, focused on premium branding, smooth scroll animations, and interactive product storytelling.",
       features: [
