@@ -95,36 +95,6 @@ export const portfolioData: PortfolioData = {
   },
   projects: [
     {
-      title: "Pink Flayer – Animated Brand Experience",
-      description:
-        "A visually immersive scroll-based landing page designed to showcase modern UI motion design using GSAP and advanced scroll interactions.",
-      features: [
-        "Smooth GSAP-powered scroll animations",
-        "Pinned sections with dynamic transitions",
-        "Layered motion effects & element scaling",
-        "Creative typography and brand storytelling",
-      ],
-      techStack: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger"],
-      githubUrl: "https://github.com/piyushsahu2708/pinkflayer-project",
-      liveUrl: "https://piyushsahu2708.github.io/pinkflayer-project/",
-      image: PlaceHolderImages.find(img => img.id === 'pinkflayer-project'),
-    },
-    {
-      title: "Tala – Fruit Snack Landing Page",
-      description:
-        "A modern animated landing page for a fruit snack brand, focused on premium branding, smooth scroll animations, and interactive product storytelling.",
-      features: [
-        "Scroll-triggered animation sequences",
-        "Section pinning with dynamic transitions",
-        "Animated product visuals & gradients",
-        "Clean, premium UI with brand-focused design",
-      ],
-      techStack: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger"],
-      githubUrl: "https://github.com/piyushsahu2708/tala-fruit-landing",
-      liveUrl: "https://piyushsahu2708.github.io/tala-fruit-landing/",
-      image: PlaceHolderImages.find(img => img.id === 'tala-project'),
-    },
-    {
       title: "SkillMirror – Skill Verification Platform",
       description:
         "An online platform designed to validate skills listed on resumes, tackling the issue of unverifiable claims.",
@@ -138,6 +108,36 @@ export const portfolioData: PortfolioData = {
       githubUrl: "https://github.com/piyushsahu2708/skillmirror",
       liveUrl: "https://skill-mirror-self.vercel.app/",
       image: PlaceHolderImages.find(img => img.id === 'skillmirror-project'),
+    },
+    {
+      title: "MediTract Pro – Hospital Management System",
+      description:
+        "A comprehensive system to digitize and streamline manual hospital workflows.",
+      features: [
+        "Centralized Patient Records Management",
+        "Efficient Appointment Scheduling System",
+        "Role-Based Access for Doctors, Staff, and Admins",
+        "Secure REST APIs for data exchange",
+      ],
+      techStack: ["MERN Stack", "Java", "REST APIs"],
+      githubUrl: "https://github.com/piyushsahu2708/meditract-pro",
+      liveUrl: "https://medi-tract-pro.vercel.app/",
+      image: PlaceHolderImages.find(img => img.id === 'meditract-project'),
+    },
+    {
+      title: "Pink Flayer – Animated Brand Experience",
+      description:
+        "A visually immersive scroll-based landing page designed to showcase modern UI motion design using GSAP and advanced scroll interactions.",
+      features: [
+        "Smooth GSAP-powered scroll animations",
+        "Pinned sections with dynamic transitions",
+        "Layered motion effects & element scaling",
+        "Creative typography and brand storytelling",
+      ],
+      techStack: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger"],
+      githubUrl: "https://github.com/piyushsahu2708/pinkflayer-project",
+      liveUrl: "https://piyushsahu2708.github.io/pinkflayer-project/",
+      image: PlaceHolderImages.find(img => img.id === 'pinkflayer-project'),
     },
     {
       title: "PractorVision – Smart Interview Proctoring System",
@@ -155,19 +155,19 @@ export const portfolioData: PortfolioData = {
       image: PlaceHolderImages.find(img => img.id === 'practorvision-project'),
     },
     {
-      title: "MediTract Pro – Hospital Management System",
+      title: "Tala – Fruit Snack Landing Page",
       description:
-        "A comprehensive system to digitize and streamline manual hospital workflows.",
+        "A modern animated landing page for a fruit snack brand, focused on premium branding, smooth scroll animations, and interactive product storytelling.",
       features: [
-        "Centralized Patient Records Management",
-        "Efficient Appointment Scheduling System",
-        "Role-Based Access for Doctors, Staff, and Admins",
-        "Secure REST APIs for data exchange",
+        "Scroll-triggered animation sequences",
+        "Section pinning with dynamic transitions",
+        "Animated product visuals & gradients",
+        "Clean, premium UI with brand-focused design",
       ],
-      techStack: ["MERN Stack", "Java", "REST APIs"],
-      githubUrl: "https://github.com/piyushsahu2708/meditract-pro",
-      liveUrl: "https://medi-tract-pro.vercel.app/",
-      image: PlaceHolderImages.find(img => img.id === 'meditract-project'),
+      techStack: ["HTML", "CSS", "JavaScript", "GSAP", "ScrollTrigger"],
+      githubUrl: "https://github.com/piyushsahu2708/tala-fruit-landing",
+      liveUrl: "https://piyushsahu2708.github.io/tala-fruit-landing/",
+      image: PlaceHolderImages.find(img => img.id === 'tala-project'),
     },
   ],
   achievements: [
