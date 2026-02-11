@@ -82,9 +82,24 @@ const Header = () => {
       )}
     >
       <div className="container flex h-16 items-center justify-between">
-        <a href="#home" className="text-lg font-bold text-primary">
-          Piyush Sahu
-        </a>
+        <div className="flex items-center gap-2">
+          <a href="#home" className="text-lg font-bold text-primary">
+            Piyush Sahu
+          </a>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleTheme}
+            className="shrink-0"
+          >
+            {theme === 'dark' ? (
+              <Sun className="size-5" />
+            ) : (
+              <Moon className="size-5" />
+            )}
+            <span className="sr-only">Toggle theme</span>
+          </Button>
+        </div>
         <div className="flex items-center gap-2">
           <nav className="hidden items-center gap-6 md:flex">
             {navLinks.map(({href, label}) => (
@@ -102,19 +117,6 @@ const Header = () => {
               </a>
             ))}
           </nav>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleTheme}
-            className="hidden shrink-0 md:inline-flex"
-          >
-            {theme === 'dark' ? (
-              <Sun className="size-5" />
-            ) : (
-              <Moon className="size-5" />
-            )}
-            <span className="sr-only">Toggle theme</span>
-          </Button>
           <div className="md:hidden">
             <Button
               variant="ghost"
@@ -145,14 +147,6 @@ const Header = () => {
                 {label}
               </a>
             ))}
-             <Button variant="ghost" onClick={toggleTheme}>
-              {theme === 'dark' ? (
-                <Sun className="mr-2" />
-              ) : (
-                <Moon className="mr-2" />
-              )}
-              Toggle Theme
-            </Button>
           </nav>
         </div>
       )}
