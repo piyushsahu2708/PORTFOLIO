@@ -45,24 +45,23 @@ const Header = () => {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)')
       .matches;
     const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-
-    if (currentTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
     setTheme(currentTheme);
   }, []);
+
+  useEffect(() => {
+    if (theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      localStorage.setItem('theme', theme);
+    }
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    if (newTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
   };
 
   const handleLinkClick = () => {
@@ -85,19 +84,23 @@ const Header = () => {
           <a href="#home" className="text-lg font-bold text-primary">
             Piyush Sahu
           </a>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleTheme}
-            className="shrink-0"
-          >
-            {theme && (theme === 'dark' ? (
-              <Sun className="size-5" />
-            ) : (
-              <Moon className="size-5" />
-            ))}
-            <span className="sr-only">Toggle theme</span>
-          </Button>
+          {theme !== null ? (
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              className="shrink-0"
+            >
+              {theme === 'dark' ? (
+                <Sun className="size-5" />
+              ) : (
+                <Moon className="size-5" />
+              )}
+              <span className="sr-only">Toggle theme</span>
+            </Button>
+          ) : (
+            <div className="size-10 shrink-0" />
+          )}
         </div>
         <div className="flex items-center gap-2">
           <nav className="hidden items-center gap-6 md:flex">
