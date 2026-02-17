@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 import ClientLayoutWrapper from '@/components/layout/client-layout-wrapper';
+import { LiquidEffectAnimation } from '@/components/ui/liquid-effect-animation';
 
 export const metadata: Metadata = {
   title: 'Piyush Sahu – Software Engineer Portfolio',
@@ -21,6 +22,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        <LiquidEffectAnimation />
         <ClientLayoutWrapper>
           {children}
           <Toaster />
