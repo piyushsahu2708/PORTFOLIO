@@ -3,7 +3,6 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 import ClientLayoutWrapper from '@/components/layout/client-layout-wrapper';
 import { LiquidEffectAnimation } from '@/components/ui/liquid-effect-animation';
-import { FireBall } from '@/components/ui/fireball';
 
 export const metadata: Metadata = {
   title: 'Piyush Sahu – Software Engineer Portfolio',
@@ -24,7 +23,6 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <LiquidEffectAnimation />
-        <FireBall />
         <ClientLayoutWrapper>
           {children}
           <Toaster />
