@@ -172,7 +172,7 @@ export function FireBall({
     <div
       className={cn(
         'pointer-events-none',
-        { 'fixed inset-0 -z-20': fullScreen },
+        { 'fixed inset-0 -z-10': fullScreen },
         className
       )}
     >
