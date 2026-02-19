@@ -20,7 +20,7 @@ export function LiquidEffectAnimation() {
 
         const setScale = () => {
           const isMobile = window.innerWidth < 768;
-          app.liquidPlane.uniforms.displacementScale.value = isMobile ? 2.5 : 5;
+          app.liquidPlane.uniforms.displacementScale.value = isMobile ? 1.5 : 3.0;
         };
 
         setScale();
