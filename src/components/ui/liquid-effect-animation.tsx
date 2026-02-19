@@ -17,9 +17,26 @@ export function LiquidEffectAnimation() {
         app.loadImage('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
         app.liquidPlane.material.metalness = 0.75;
         app.liquidPlane.material.roughness = 0.25;
-        app.liquidPlane.uniforms.displacementScale.value = 5;
+
+        const setScale = () => {
+          const isMobile = window.innerWidth < 768;
+          app.liquidPlane.uniforms.displacementScale.value = isMobile ? 2.5 : 5;
+        };
+
+        setScale();
+        window.addEventListener('resize', setScale);
+
         app.setRain(false);
         window.__liquidApp = app;
+
+        // Custom dispose to clean up event listener
+        const originalDispose = app.dispose;
+        app.dispose = () => {
+          window.removeEventListener('resize', setScale);
+          if (originalDispose) {
+            originalDispose.call(app);
+          }
+        };
       }
     `
     document.body.appendChild(script)
